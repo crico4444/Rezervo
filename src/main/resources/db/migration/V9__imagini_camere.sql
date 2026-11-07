@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS imagini_camere (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    camera_id BIGINT NOT NULL,
+    url_imagine VARCHAR(500) NOT NULL,
+    creat_la TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    CONSTRAINT fk_imagini_camere_camera FOREIGN KEY (camera_id) REFERENCES camere(id) ON DELETE CASCADE
+);

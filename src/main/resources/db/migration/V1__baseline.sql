@@ -1,0 +1,3 @@
+-- Flyway baseline migration
+-- Database rezervari_db already exists with all tables
+-- This file is intentionally empty - Flyway will baseline at version 1
